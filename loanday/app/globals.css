@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-image {
+  background-image: url("https://i.ibb.co/qg2sRZN/giorgio-trovato-BRl69u-NXr7g-unsplash.jpg"),
+    linear-gradient(to left, rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.911));
+  background-blend-mode: overlay;
+  height: 80vh;
+  opacity: 1;
+}
+
+.bg_request {
+  background-image: url("https://i.ibb.co/TKbqcFP/simon-hattinga-verschure-WNev-Bl-ZWCKA-unsplash.jpg"),
+    linear-gradient(to right, rgba(5, 4, 36, 0.774), rgba(0, 0, 0, 0.973));
+  background-blend-mode: overlay;
+  height: 40vh;
+  opacity: 1;
+}
+
+.bg_office {
+  background-image: url("https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZXxlbnwwfHwwfHw%3D&w=1000&q=80"),
+    linear-gradient(to right, rgba(29, 28, 77, 0.774), rgba(0, 0, 0, 0.973));
+  background-blend-mode: overlay;
+  height: 20vh;
+  opacity: 1;
+  background-size: cover;
+}
+
+.bg_customers {
+  background-image: url("https://emarsys.com/app/uploads/fly-images/42393/GettyImages-507476574-1-2560x1280-c-default-1110x9999.jpg"),
+    linear-gradient(rgba(2, 11, 34, 0.514), rgba(0, 0, 0, 0.973));
+  background-blend-mode: overlay;
+  height: 60vh;
+  opacity: 1;
+  width: 100vw;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+.title {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.child {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+.child1 {
+  z-index: 50;
+}
+.parent {
+  z-index: 200 !important;
+}
+.parent:hover .child {
+  transform: translateY(-100px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .bg-image {
+    background-image: url("https://i.ibb.co/qg2sRZN/giorgio-trovato-BRl69u-NXr7g-unsplash.jpg"),
+      linear-gradient(to left, rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.911));
+    background-blend-mode: overlay;
+    height: 128vh;
+    opacity: 1;
+  }
+  .bg_request {
+    background-image: url("https://i.ibb.co/TKbqcFP/simon-hattinga-verschure-WNev-Bl-ZWCKA-unsplash.jpg"),
+      linear-gradient(to right, rgba(5, 4, 36, 0.774), rgba(0, 0, 0, 0.973));
+    background-blend-mode: overlay;
+    height: 90vh;
+    opacity: 1;
+  }
+  .bg_office {
+    background-image: url("https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZXxlbnwwfHwwfHw%3D&w=1000&q=80"),
+      linear-gradient(to right, rgba(29, 28, 77, 0.774), rgba(0, 0, 0, 0.973));
+    background-blend-mode: overlay;
+    height: 40vh;
+    opacity: 1;
+    background-size: cover;
+  }
+}
